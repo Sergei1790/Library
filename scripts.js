@@ -7,6 +7,7 @@ addBook.addEventListener('click', displayForm);
 const submitBook = document.querySelector('#submit-book');
 submitBook.addEventListener('click', submitForm);
 const formWrapper = document.querySelector('.sund-new-book__wrapper');
+document.querySelector('.sund-new-book__overlay').addEventListener('click', hideForm);
 // const btnCreateLib = document.querySelector('#btn-create-lib');
 // btnCreateLib.addEventListener('click', displayBooksinLibrary)
 const myLibrary = [];
@@ -30,6 +31,15 @@ document.addEventListener("keydown", (event) => {
 function submitForm(){
     hideForm();
 }
+// window.addEventListener('click', function(e){
+//     e.preventDefault();
+//     e.stopPropagation();
+//     let bookForm = document.querySelector(".sund-new-book");
+//     let formOpen = document.querySelector(".btn-add-book");
+//     if (!bookForm.contains(e.target) && !formOpen.contains(e.target)){
+//         hideForm();
+//     } 
+// })
 // function addBookToLibrary() {
 //     myLibrary.push(input.value);
 //     const bookCard = document.createElement('div')  ;
