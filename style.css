@@ -50,8 +50,15 @@ body{
 .sund-new-book{
     position: relative;
     z-index: 999;
-    padding: 80px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
     transform: scale(0);
     transform-origin: center center;
     transition: all .3s ease-in-out;
+}
+.sund-new-book__field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

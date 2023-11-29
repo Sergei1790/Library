@@ -7,6 +7,12 @@ addBook.addEventListener('click', displayForm);
 const submitBook = document.querySelector('#submit-book');
 submitBook.addEventListener('click', submitForm);
 const formWrapper = document.querySelector('.sund-new-book__wrapper');
+
+const bookAuthor = document.querySelector('#author;');
+const booktitle = document.querySelector('#title;');
+const bookpages = document.querySelector('#pages;');
+const bookreadOrNot = document.querySelector('#readOrNot;');
+
 document.querySelector('.sund-new-book__overlay').addEventListener('click', hideForm);
 // const btnCreateLib = document.querySelector('#btn-create-lib');
 // btnCreateLib.addEventListener('click', displayBooksinLibrary)
@@ -28,8 +34,13 @@ document.addEventListener("keydown", (event) => {
         hideForm();
     }
 });
-function submitForm(){
+function clearForm(){
+    formWrapper.find('inpu')
+}
+function submitForm(e){
+    e.preventDefault();
     hideForm();
+    clearForm();
 }
 // window.addEventListener('click', function(e){
 //     e.preventDefault();
