@@ -14,8 +14,6 @@ const bookpages = document.querySelector('#pages');
 const bookreadOrNot = document.querySelector('#readOrNot');
 
 document.querySelector('.sund-new-book__overlay').addEventListener('click', hideForm);
-// const btnCreateLib = document.querySelector('#btn-create-lib');
-// btnCreateLib.addEventListener('click', displayBooksinLibrary)
 const myLibrary = [];
 
 function Book(author, title, pages, readOrNot) {
@@ -51,23 +49,7 @@ function submitForm(e){
     console.log(myLibrary);
     displayBooksinLibrary();
 }
-// window.addEventListener('click', function(e){
-//     e.preventDefault();
-//     e.stopPropagation();
-//     let bookForm = document.querySelector(".sund-new-book");
-//     let formOpen = document.querySelector(".btn-add-book");
-//     if (!bookForm.contains(e.target) && !formOpen.contains(e.target)){
-//         hideForm();
-//     } 
-// })
-// function addBookToLibrary() {
-//     myLibrary.push(input.value);
-//     const bookCard = document.createElement('div')  ;
-//     bookCard.className = 'sund-book-card';
-//     bookCard.innerText = input.value;  
-//     booksList.appendChild(bookCard);
-//     input.value = '';
-// }
+
 function displayBooksinLibrary(){
     booksList.innerHTML = '';
     for(let book of myLibrary){
