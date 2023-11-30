@@ -88,7 +88,7 @@ function displayBooksinLibrary(){
         bookStatus.className = 'sund-book__status';
 
         bookCard.appendChild(bookCardAuthor);
-        bookCard.appendChild(bookCardTitle);
+        bookCard.appendChild(bookCardTitle); 
         bookCard.appendChild(bookCardPages);
         bookCard.appendChild(bookreadOrNot);
         bookCard.appendChild(bookRemove);
