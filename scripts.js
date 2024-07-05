@@ -16,6 +16,17 @@ const bookreadOrNot = document.querySelector('#readOrNot');
 document.querySelector('.sund-new-book__overlay').addEventListener('click', hideForm);
 const myLibrary = [];
 
+// function Book(author, title, pages, readOrNot) {
+//     this.author = author;
+//     this.title = title;
+//     this.pages = pages;
+//     this.readOrNot = readOrNot;
+// }
+// Book.prototype.toggleReadOrNot = function() {
+//     this.readOrNot = !this.readOrNot;
+//     console.log(myLibrary);
+// };
+
 class Book{
     constructor(author, title, pages, readOrNot){
         this.author = author;
@@ -25,8 +36,10 @@ class Book{
     }
     toggleReadOrNot(){
         this.readOrNot = !this.readOrNot;
+
     }
 }
+
 
 function displayForm(){
     formWrapper.classList.add('active')
