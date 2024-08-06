@@ -66,3 +66,14 @@ body{
     flex-direction: column;
     gap: 10px;
 }
+/* This is our style for the invalid fields */
+
+input:focus:invalid {
+outline: none;
+}
+/* This is the style of our error messages */
+.error {
+    display: none;
+    color: rgb(236, 1, 1);
+}
+
